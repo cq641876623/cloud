@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud.iml" filepath="$PROJECT_DIR$/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server-8081/eurekaserver8081.iml" filepath="$PROJECT_DIR$/eureka-server-8081/eurekaserver8081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server-8082/eurekaserver8082.iml" filepath="$PROJECT_DIR$/eureka-server-8082/eurekaserver8082.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-consumer-8090/helloconsumer8090.iml" filepath="$PROJECT_DIR$/hello-consumer-8090/helloconsumer8090.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-provider-8085/helloprovider8085.iml" filepath="$PROJECT_DIR$/hello-provider-8085/helloprovider8085.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-provider-8086/helloprovider8086.iml" filepath="$PROJECT_DIR$/hello-provider-8086/helloprovider8086.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul8083/zuul8083.iml" filepath="$PROJECT_DIR$/zuul8083/zuul8083.iml" />
+    </modules>
+  </component>
+</project>

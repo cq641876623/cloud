@@ -1,0 +1,16 @@
+server: 
+  port: 8083
+ 
+eureka: 
+  instance:
+    hostname: localhost #eureka服务端的实例名称(这里使用了虚拟主机映射，修改hosts文件即可实现)
+  client: 
+    service-url:
+      #单机 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
+      defaultZone: http://192.168.80.19:8081/eureka/,http://192.168.80.19:8082/eureka/
+
+
+spring:
+  application:
+    name: cloud001
