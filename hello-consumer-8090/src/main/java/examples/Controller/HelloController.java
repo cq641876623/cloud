@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 
+
 @Controller
 public class HelloController{
     @Resource
@@ -15,5 +16,10 @@ public class HelloController{
     @ResponseBody
     public String hello() {
         return helloService.hello();
+    }
+
+    @RequestMapping("/test001")
+    public String hello2(){
+        return helloService.test001();
     }
 }

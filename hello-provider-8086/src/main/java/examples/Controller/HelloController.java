@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/")
 public class HelloController {
-    @RequestMapping("/index")
+    @RequestMapping("/hello")
     @ResponseBody
     public String hello(){
         return "hello8086";
@@ -16,7 +16,7 @@ public class HelloController {
 
     @RequestMapping("/test001")
     public String hello2(){
-        return "index";
+        return "test";
 
     }
 
