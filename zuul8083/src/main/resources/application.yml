@@ -4,7 +4,8 @@ server:
 eureka: 
   instance:
     hostname: localhost #eureka服务端的实例名称(这里使用了虚拟主机映射，修改hosts文件即可实现)
-  client: 
+  client:
+    register-with-eureka: true
     service-url:
       #单机 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
@@ -13,4 +14,10 @@ eureka:
 
 spring:
   application:
-    name: cloud001
+    name: cloud001-zuul
+
+zuul:
+  routes:
+    api-a:
+      path: /client/**
+      serviceId: hello-consumer
