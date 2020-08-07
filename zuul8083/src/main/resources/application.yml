@@ -21,3 +21,4 @@ zuul:
     api-a:
       path: /client/**
       serviceId: hello-consumer
+  sensitive-headers:

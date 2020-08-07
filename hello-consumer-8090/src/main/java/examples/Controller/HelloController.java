@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 public class HelloController{
     @Resource
     private HelloService helloService;
-    @RequestMapping("/index")
+    @RequestMapping("/ ")
     @ResponseBody
     public String hello() {
         return helloService.hello();
