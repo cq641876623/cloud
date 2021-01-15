@@ -10,6 +10,7 @@
         <module>hello-provider-8085</module>
         <module>hello-consumer-8090</module>
         <module>hello-provider-8086</module>
+        <module>hello-consumer-8091</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
