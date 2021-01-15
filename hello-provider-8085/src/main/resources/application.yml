@@ -4,15 +4,20 @@ server:
 eureka: 
   instance:
     hostname: localhost #eureka服务端的实例名称(这里使用了虚拟主机映射，修改hosts文件即可实现)
+    metadata-map:
+      zone: zone-2
   client: 
     register-with-eureka: true     #false表示不向注册中心注册自己。
-
+    prefer-same-zone-eureka: true
     service-url:
       #单机 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
-      defaultZone: http://192.168.80.19:8081/eureka/,http://192.168.80.19:8082/eureka/
-
-
+      zone-1: http://192.168.80.120:8081/eureka/
+      zone-2: http://192.168.80.120:8082/eureka/
+    region: beijing
+    availability-zones:
+      jiangsu: zone-1
+      beijing: zone-2
 
 
 
